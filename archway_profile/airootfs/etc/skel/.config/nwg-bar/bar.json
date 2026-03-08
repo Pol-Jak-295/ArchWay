@@ -1,0 +1,33 @@
+[
+  {
+    "label": "Lock",
+    "exec": "hyprlock",
+    "icon": "/usr/share/nwg-bar/images/system-lock-screen.svg"
+  },
+  {
+    "label": "Logout",
+    "exec": "hyprctl dispatch exit",
+    "icon": "/usr/share/nwg-bar/images/system-log-out.svg"
+  },
+    {
+    "label": "Suspend",
+    "exec": "bash -c ~/.config/nwg-bar/scripts/suspender.sh",
+    "icon": "/usr/share/nwg-bar/images/system-suspend.svg"
+  },
+  {
+    "label": "Reboot",
+    "exec": "systemctl reboot",
+    "icon": "/usr/share/nwg-bar/images/system-reboot.svg"
+  },
+  {
+    "label": "Shutdown",
+    "exec": "systemctl -i poweroff",
+    "icon": "/usr/share/nwg-bar/images/system-shutdown.svg"
+  },
+  {
+    "label": "Quick Update",
+    "exec": "bash -c ~/.config/nwg-bar/scripts/kexec.sh",
+    "icon": "/usr/share/nwg-bar/images/icons/kexec.svg"
+  }
+
+]

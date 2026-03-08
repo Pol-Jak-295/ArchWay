@@ -1,0 +1,243 @@
+/* PolLand SwayNC Style - Catppuccin Mocha Sapphire */
+
+@define-color base #1e1e2e;
+@define-color text #cdd6f4;
+@define-color sapphire #89b4fa;
+@define-color red #f38ba8;
+@define-color surface0 #313244;
+@define-color overlay0 #6c7086;
+
+* {
+    font-family: "NotoSansMNFM-Reg", sans-serif;
+    font-size: 12pt;
+}
+
+/*--mpris------------*/
+
+.widget-mpris {
+  background: rgba(17, 17, 27, 0.2);
+  border-radius: 14px;
+  margin: 6px 4px;
+  padding: 5px;
+  border: 1px solid #313246;
+}
+
+.widget-mpris-player {
+  padding: 6px;
+  border: 3px solid @sapphire;
+}
+
+.widget-mpris-player {
+  padding: 6px;
+}
+
+.widget-mpris-album-art {
+  border-radius: 12px;
+}
+
+.widget-mpris-title {
+  color: #cdd6f4;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.widget-mpris-subtitle {
+  color: #94e2d5;
+  font-size: 12px;
+}
+
+.widget-mpris > box > button {
+  background: #313244;
+  color: #cdd6f4;
+  border-radius: 999px;
+  min-width: 32px;
+  min-height: 32px;
+  margin: 2px;
+}
+
+.widget-mpris > box > button:hover {
+  background: #45475a;
+  color: #94e2d5;
+
+}
+
+.widget-mpris-player {
+  padding: 6px;
+}
+
+.widget-mpris-album-art {
+  border-radius: 12px;
+}
+
+.widget-mpris-title {
+  color: #cdd6f4;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.widget-mpris-subtitle {
+  color: #94e2d5;
+  font-size: 12px;
+}
+
+.widget-mpris > box > button {
+  background: #313244;
+  color: #cdd6f4;
+  border-radius: 999px;
+  min-width: 32px;
+  min-height: 32px;
+  margin: 2px;
+}
+
+.widget-mpris > box > button:hover {
+  background: #45475a;
+  color: #94e2d5;
+
+}
+
+.widget-mpris-album-art {
+  border-radius: 12px;
+}
+
+.widget-mpris-title {
+  color: #cdd6f4;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.widget-mpris-subtitle {
+  color: #94e2d5;
+  font-size: 12px;
+}
+
+.widget-mpris > box > button {
+  background: #313244;
+  color: #cdd6f4;
+  border-radius: 999px;
+  min-width: 32px;
+  min-height: 32px;
+  margin: 2px;
+}
+
+.widget-mpris > box > button:hover {
+  background: #45475a;
+  color: #94e2d5;
+}
+
+/*-- notifications---------*/
+
+.notification-row {
+  margin: 4px 0;
+}
+
+
+.notification {
+  background: alpha (#181825, 0.4);
+  border-radius: 14px;
+  border: 2px solid #74c7ec;
+  padding: 10px 12px;
+  margin: 4px;
+}
+
+.notification.critical {
+  border-color: #f38ba8;
+  background: alpha(#f38ba8, 0.08);
+}
+
+.notification.low {
+  border-color: @sapphire;
+}
+
+.notification-content {
+  padding: 0px;
+}
+
+.notification-default-action {
+  background: transparent;
+  border-radius: 12px;
+}
+
+
+.close-button {
+  background: #313244;
+  color: #6c7086;
+  border-radius: 9px;
+  min-width: 20px;
+  min-height: 20px;
+  margin: 4px;
+}
+
+.close-button:hover {
+  background: #f38ba8;
+  color: #1e1e2e;
+}
+
+.notification-label-app-name {
+  color: #94e2d5;
+  background: transparent;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+}
+
+.notification-label-time {
+  color: #6c7086;
+  font-size: 11px;
+}
+
+.notification-title {
+  color: #cdd6f4;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.notification-body {
+  color: alpha(#bac2de, 0.1);
+  font-size: 12px;
+}
+
+/* -- Popup Notifications (overlay) --------- */
+
+.floating-notifications {
+  background: transparent;
+}
+
+.blank-window {
+  background: transparent;
+}
+
+.notification-window {
+  background: transparent;
+  border: none;
+  margin: 6px;
+}
+
+.notification-group {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+.summary {
+    font-weight: bold;
+    color: @text;
+}
+
+.body {
+    color: @text;
+}
+
+.control-center {
+    background: rgba(30, 30, 46, 0.8);
+    border: 2px solid @sapphire;
+    border-radius: 12px;
+}
+
+.control-center-list {
+    background: transparent;
+}
+

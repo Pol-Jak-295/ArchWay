@@ -1,0 +1,122 @@
+{
+	"layer": "top",
+	// Using margin-bottom with a negative value in order to reduce the space between Hyprland window and waybar
+	"margin-bottom": -6,
+	"margin-top": 2,
+	"modules-left": ["custom/launcher", "cpu","memory", "network", "tray", "custom/lyrics"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["backlight","pulseaudio","clock", "battery", "custom/power"],
+	"height": 26,
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": "{icon} {volume}%",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+	"network": {
+		// "interface": "wlp2*", // (Optional) To force the use of this interface
+		"format-wifi": "wifi",
+		"format-ethernet": "eth",
+		"tooltip-format": "{essid} ({signalStrength}%)",
+		"format-linked": "{ifname} (No IP) ",
+		"format-disconnected": "⚠",
+		"format-alt": "{ifname}: {ipaddr}/{cidr}"
+		},
+	"backlight": {
+		"tooltip": false,
+		"format": " {}%",
+		"interval":1,
+		"on-scroll-up": "light -A 5",
+		"on-scroll-down": "light -U 5"
+	},
+
+  "custom/lyrics": {
+    "return-type": "json",
+    "format": "{icon} {0}",
+    "hide-empty-text": true,
+    "format-icons": {
+      "playing": "",
+      "paused": "",
+      "lyric": "",
+      "music": "󰝚",
+      "no_lyric": "",
+      "getting": ""
+    },
+    "exec-if": "which waybar-lyric",
+    "exec": "waybar-lyric --quiet",
+    "on-click": "waybar-lyric play-pause"
+  },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+"clock": {
+	"interval": 1,
+	"format": " {:%H:%M}",
+	"max-length": 25
+},
+
+
+    "cpu": {
+        "interval": 15,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10
+    },
+
+
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "rofi -show drun -theme /home/jaka/.config/rofi/launchers/type-6/style-4.rasi",
+        "on-click-right": "killall rofi"
+    },
+    "custom/power":{
+        "format": "",
+        "on-click": "nwg-bar"
+    },
+
+
+"hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+    "1": "一",
+    "2": "二",
+    "3": "三",
+    "4": "四",
+    "5": "五",
+    "6": "六",
+    "7": "七",
+    "8": "八",
+    "9": "九",
+    "10": "十"
+                                                                                              }
+    },
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "on-click": "activate"
+}
+
+
+

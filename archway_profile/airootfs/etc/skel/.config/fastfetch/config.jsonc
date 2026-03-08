@@ -1,0 +1,173 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/miku.ansi",
+    "color": {
+        "1": "38;5;80",   // Main Teal
+        "2": "38;5;232",  // Black
+        "3": "38;5;224",  // Skin
+        "4": "38;5;242",  // Dress
+        "5": "38;5;86",   // Eyes
+        "6": "38;5;211",  // Mouth
+        "7": "38;5;118",  // Onion Green
+        "8": "38;5;255",  // Onion White
+        "9": "38;5;197"   // Hair Ribbons
+    }
+  },
+  "display": {
+    "color": {
+      "keys": "bright_cyan",
+      "title": "bright_green",
+      "output": "default",
+      "separator": "bright_green"
+    },
+    "separator": "   "
+  },
+  "modules": [
+    // Title with Miku styling
+    {
+      "type": "title",
+      "key": " 初音ミク 🎤",
+      "keyColor": "bright_cyan",
+      "outputColor": "bright_green"
+    },
+    
+    // Custom full-width separator using Unicode
+    {
+      "key": "\u001b[92m──────────────────────────────────────────────\u001b[0m",
+      "type": "custom"
+    },
+
+    // System info
+    {
+      "type": "os",
+      "key": " 🎵 OS",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "host",
+      "key": " 🏠 Host",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "kernel",
+      "key": " ⚙️ Kernel",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "uptime",
+      "key": " ⏱️ Uptime",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "packages",
+      "key": " 📦 Packages",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "shell",
+      "key": " 🐚 Shell",
+      "keyColor": "cyan"
+    },
+
+    // Green onion section
+    {
+      "key": "\u001b[92m🌱───────────\u001b[33m ⚡ \u001b[32mOnion Power! \u001b[33m⚡ \u001b[92m───────────🌱\u001b[0m",
+      "type": "custom"
+    },
+
+    // Hardware
+    {
+      "type": "cpu",
+      "key": " 🧠 CPU",
+      "keyColor": "bright_cyan",
+      "outputColor": "green"
+    },
+    {
+      "type": "gpu",
+      "key": " 🎨 GPU",
+      "keyColor": "bright_cyan",
+      "outputColor": "green"
+    },
+    {
+      "type": "memory",
+      "key": " 💾 RAM",
+      "keyColor": "bright_cyan",
+      "outputColor": "green"
+    },
+    {
+      "type": "disk",
+      "key": " 💿 Disk",
+      "keyColor": "bright_cyan",
+      "outputColor": "green"
+    },
+
+    // Miku's favorite vegetables
+    {
+      "key": "\u001b[92m🔥═════════════ World is Mine! ═════════════🔥\u001b[0m",
+      "type": "custom"
+    },
+
+    // Fun extras
+    {
+      "type": "terminal",
+      "key": " 🖥️ Terminal",
+      "keyColor": "bright_cyan",
+      "outputColor": "green"
+    },
+    {
+      "type": "terminalfont",
+      "key": " 🔤 Font",
+      "keyColor": "bright_cyan",
+      "outputColor": "green"
+    },
+    {
+      "type": "wm",
+      "key": " 🪟 WM/DE",
+      "keyColor": "bright_cyan",
+      "format": "PolLand 🎵 (wayland)",
+      "outputColor": "green"
+    },
+    {
+      "type": "theme",
+      "key": " 🎨 Theme",
+      "keyColor": "bright_cyan",
+      "outputColor": "green"
+    },
+    {
+      "type": "icons",
+      "key": " ✨ Icons",
+      "keyColor": "bright_cyan",
+      "outputColor": "green"
+    },
+    {
+      "type": "cursor",
+      "key": " 👆 Cursor",
+      "keyColor": "bright_cyan",
+      "outputColor": "green"
+    },
+
+    // Color palette like Miku's hair streaks
+    {
+      "type": "colors",
+      "key": " 🎵 Vocaloid",
+      "symbol": "block",
+      "paddingLeft": 2
+    },
+    
+    // Miku signature
+    {
+      "type": "custom",
+      "format": "\u001b[96mhttps://github.com/Pol-Jak-295/PolLand\u001b[0m",
+      "key": " 🌐"
+    },
+    
+    // Final separator
+    {
+      "key":
+      "\u001b[38;5;51m                                            ✦✦✦✦ \nMIKU MIKU BEAM \u001b[38;5;51m░\u001b[38;5;87m▒\u001b[38;5;159m▓\u001b[38;5;231m█\u001b[38;5;195m▓\u001b[38;5;123m▒\u001b[38;5;87m░\u001b[38;5;51m░\u001b[38;5;87m▒\u001b[38;5;159m▓\u001b[38;5;231m█\u001b[38;5;195m▓\u001b[38;5;123m▒\u001b[38;5;87m░\u001b[38;5;51m░\u001b[38;5;87m▒\u001b[38;5;159m▓\u001b[38;5;231m█\u001b[38;5;195m▓\u001b[38;5;123m▒\u001b[38;5;87m░\u001b[38;5;51m░\u001b[38;5;87m▒\u001b[38;5;159m▓\u001b[38;5;231m█\u001b[38;5;195m▓\u001b[38;5;123m▒\u001b[38;5;87m░\u001b[38;5;51m░\u001b[38;5;87m▒\u001b[38;5;159m▓\u001b[38;5;231m█\u001b[38;5;195m▓\u001b[38;5;123m▒\u001b[38;5;87m░\u001b[38;5;51m░\u001b[38;5;87m▒\u001b[38;5;159m▓\u001b[38;5;231m█\u001b[38;5;195m▓\u001b[38;5;123m▒\u001b[38;5;87m░\u001b[38;5;51m░\u001b[38;5;87m▒\u001b[38;5;159m▓\u001b[38;5;231m█\u001b[38;5;195m▓\u001b[38;5;123m▒\u001b[38;5;87m░\u001b[38;5;51m░\u001b[38;5;87m▒\u001b[38;5;159m▓\u001b[38;5;231m█\u001b[38;5;195m▓\u001b[38;5;123m▒\u001b[38;5;87m░\u001b[38;5;51m░\u001b[38;5;87m▒\u001b[38;5;159m▓\u001b[38;5;231m█\u001b[38;5;195m▓\u001b[38;5;123m▒\u001b[38;5;87m░\u001b[38;5;51m░\u001b[38;5;87m▒\u001b[38;5;159m▓\u001b[38;5;231m█\u001b[38;5;195m▓\u001b[38;5;123m▒\u001b[38;5;87m░\u001b[38;5;51m░\u001b[38;5;87m▒\u001b[38;5;159m▓\u001b[38;5;231m█\u001b[38;5;195m▓\u001b[38;5;123m▒\u001b[38;5;87m░\u001b[38;5;51m░\u001b[38;5;87m▒\u001b[38;5;159m▓\u001b[38;5;231m█\u001b[38;5;51m✦💥✦ \n                                                                                                ✦✦✦✦",
+      "type": "custom"
+    }
+  ]
+}
