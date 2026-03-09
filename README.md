@@ -13,7 +13,7 @@ A mess. Mainly for me to have a GitHub backup.
 - ✅ Repository path kind of works now
 - ✅ Ships `yay` (yet another yogurt)
 - ❌ Half the packages are missing
-- ❌ `virtio-dri` doesn't exist (no idea what that was)
+- ❌ `virtio-dri` doesn't exist (no idea what that was) - figured out what it is. it's the GPU drivers for virtualization. don't remove that. it's needed.
 - ❌ AUR packages not included (install them yourself like a real Arch user)
 
 ## Installation
