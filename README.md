@@ -13,7 +13,7 @@ A mess. Mainly for me to have a GitHub backup.
 - ✅ Repository path kind of works now
 - ✅ Ships `yay` (yet another yogurt)
 - ❌ Half the packages are missing
-- ❌ `virtio-dri` doesn't exist (no idea what that was) - figured out what it is. it's the GPU drivers for virtualization. don't remove that. it's needed.
+- ❌ `virtio-dri` doesn't exist (no idea what that was) - figured out what it is. it's the GPU drivers for virtualization. don't remove that. it's needed. Nvm it isn't still no idea what it is, but it shouldn't be there. does not exist.
 - ❌ AUR packages not included (install them yourself like a real Arch user)
 
 ## Installation
@@ -30,3 +30,6 @@ Backup for me. You can use it too I guess, but don't expect much.
 - Ubuntu for the codename idea
 - The AUR for existing
 - Me for typing stuff until it worked (not yet successful)
+
+## Current development:
+ive shifted from developing in archiso to developing the system in a virtual machine.
